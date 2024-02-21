@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Calculator</title>
+</head>
+<body>
+    <h2>Chicken Price</h2>
+    <form>
+        <label>Kilogram</label>
+        <input id="quantity"  onchange="chickenPrice()">
+        <br><br>
+        <label>Price:</label>
+        <span id="price">0</span>
+        
+    </form>
+
+    <script>
+        function chickenPrice() {
+            let name=("")
+            const quantity = document.getElementById('quantity').value;
+            const price = quantity * 500+name; 
+            document.getElementById('price').textContent = price;
+        }
+    </script>
+</body>
+</html>
